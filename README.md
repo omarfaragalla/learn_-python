@@ -1,2 +1,3 @@
 # learn_python
-#to learn git
+for learn githup
+# project Notes
