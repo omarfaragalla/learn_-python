@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>CRUD</title>
+        <link rel="stylesheet" href="STYLE.CSS">
+    </head>
+    <body>
+        <div class="crud">
+            <div class="head">
+                <h2>CRUD</h2>
+            </div>
+            <div class="inputs">
+                <input type="text" placeholder="title" id="title">
+                <div class="price">
+                    <input onkeyup="gettotal()" type="number"
+                        placeholder="price" id="price">
+                    <input onkeyup="gettotal()" type="number"
+                        placeholder="taxes" id="taxes">
+                    <input onkeyup="gettotal()" type="number" placeholder="ads"
+                        id="ads">
+                    <input onkeyup="gettotal()" type="number"
+                        placeholder="discount" id="discount">
+                    total:<label id="total" for="total"></label>
+                </div>
+                <input type="number" placeholder="count" id="count">
+                <input type="text" placeholder="category" id="category">
+                <button type="submit" id="submit"> creat</button>
+
+            </div>
+
+            <div class="output">
+                <div class="search">
+                    <input onkeyup="searchdata(this.value)" type="text"
+                        placeholder="search" id="search">
+                    <div class="buttonsearch">
+                        <button onclick="getsearchMood(this.id)"
+                            id="searchtitle">search by title</button>
+                        <button onclick="getsearchMood(this.id)"
+                            id="searchcategory">search by category</button>
+                    </div>
+                </di>
+                <div id="delateall"></div>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>id</th>
+                            <th>title</th>
+                            <th>price</th>
+                            <th>taxes</th>
+                            <th>ads</th>
+                            <th>discount</th>
+                            <th>total</th>
+                            <th>category</th>
+                            <th>update</th>
+                            <th>delate</th>
+                        </tr>
+                    </thead>
+
+                    <tbody id="tbody">
+                        <tr>
+                            <td>1</td>
+                            <td>apple</td>
+                            <td>50000</td>
+                            <td>200</td>
+                            <td>100</td>
+                            <td>10</td>
+                            <td>7000</td>
+                            <td>phone</td>
+                            <td><button id="update">update</button></td>
+                            <td><button id="delate">delate</button></td>
+
+                        </tr>
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <script src="CRUD.JS"></script>
+    </body>
+</html>
